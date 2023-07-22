@@ -1,0 +1,54 @@
+html {
+    font-family: Calibri, Serif;
+    background-color: white;
+}
+
+.right_panel {
+    float: right;
+}
+
+.header {
+    border-radius: 10px;
+    background-color: #47bcff;
+    float: left;
+    border: 2px solid black;
+    padding: 2%;
+    margin: 1%;
+}
+
+.weather_data {
+    border-radius: 10px;
+    background-color: #47bcff;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    margin-left: auto;
+    border: 2px solid black;
+}
+
+.input {
+    border-radius: 10px;
+    background-color: #47bcff;
+
+    padding: 3%;
+    margin: 10%;
+    border: 2px solid black;
+}
+
+.separator {
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+
+.button {
+    margin: 3%;
+    float: right;
+}
+
+.inputValue {
+    margin: 3%;
+}
+
+.weather_icon {
+    float: left;
+}
