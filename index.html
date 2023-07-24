@@ -10,6 +10,7 @@
     <body>
         <div class="left_panel">
             <div class="header">
+                <div class="dragger" id="header-dragger"></div>
                 <div class="home">
                     <img class="home_icon" src=""></img>
                     <h1 class="home_title">Добро пожаловать!</h1>
@@ -20,19 +21,23 @@
 
         <div class="right_panel">
             <div class="weather_data">
+                <div class="dragger" id="data-dragger"></div>
                 <img class="icon" src=""></img>
                 <h1 class="temp_now"></h1>
                 <h2 class="temp_feels"></h2>
-                <h2 class="desc"></h2>
+                <h2 class="desc">Введите город для показа</h2>
                 <h3 class="temp_max_min"></h3>
             </div>
 
             <div class="input">
+                <div class="dragger" id="input-dragger"></div>
                 <button class="button">Получить</button>
                 <input class="inputValue"></input>
             </div>
         </div>
 
     </body>
+    <script src="html_elements.js"></script>
+    <script src="drag.js"></script>
     <script src="scr.js"></script>
 </html>

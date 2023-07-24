@@ -1,21 +1,3 @@
-// html tags
-
-// Inputs and other
-let button = document.querySelector('.button')
-let inputvalue = document.querySelector('.inputValue')
-let nameVal = document.querySelector('.name')
-// Weather data in searching place
-let temp_now = document.querySelector('.temp_now')
-let temp_max_min = document.querySelector('.temp_max_min')
-let temp_feels = document.querySelector('.temp_feels')
-let desc = document.querySelector('.desc')
-let WIcon = document.querySelector('.weather_icon')
-let icon = document.querySelector(".icon")
-// Weather data in user home place
-let home_title = document.querySelector(".home_title")
-let home_desc = document.querySelector(".home_desc")
-let home_icon = document.querySelector(".home_icon")
-
 // other vars
 
 let appid = "56b211a124e9b0a95c416d33a34abbaf"
@@ -40,7 +22,7 @@ function getHomeWeather() {
 
 const displayData =(weather)=> {
     temp_now.innerText = weather.main.temp
-    temp_max_min.innerText = "🠕 " + weather.main.temp_max + " / 🠗 " + weather.main.temp_min
+    temp_max_min.innerText = "Макс.: " + weather.main.temp_max + " / Мин.: " + weather.main.temp_min
     temp_feels.innerText = "Ощущается как: " + weather.main.feels_like
     desc.innerText = weather.weather[0].description
 
@@ -67,4 +49,11 @@ function success(position) {
     home_weather(lat, lon)
 }
 
+// other funs
+
+Drag(data_dragger, data_panel)
+Drag(input_dragger, input_panel)
+Drag(home_dragger, home_panel)
+
+// end
 getHomeWeather()
