@@ -6,8 +6,8 @@ html {
     margin-right: 3%;
 }
 
-.right_panel {
-    float: right;
+ul {
+    list-style-type: none;
 }
 
 .dragger {
@@ -26,7 +26,14 @@ html {
     padding: 2%;
 }
 
-.weather_data {
+.separator {
+    border-bottom: 2px solid black;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.panel {
+    font-family: Calibri, fantasy;
     border-radius: 10px;
     background-color: #47bcff;
     align-items: center;
@@ -34,31 +41,15 @@ html {
     padding: 2%;
     margin-bottom: 3%;
     border: 2px solid black;
+    float: left;
 }
 
-.input {
+.fullScreen-panel {
     border-radius: 10px;
     background-color: #47bcff;
-
-    padding: 3%;
-    margin: 3%;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    margin-bottom: 3%;
     border: 2px solid black;
-}
-
-.separator {
-    border-bottom: 2px solid black;
-    padding-bottom: 10px;
-}
-
-.button {
-    margin: 3%;
-    float: right;
-}
-
-.inputValue {
-    margin: 3%;
-}
-
-.weather_icon {
-    float: left;
 }

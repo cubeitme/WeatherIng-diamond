@@ -1,43 +1,33 @@
 <!DOCTYPE html>
-<html lang="ru">
-
+<html>
     <head>
-        <title>WeatherIng</title>
-        <link rel="stylesheet" href="style.css">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta charset="UTF-8">
+        <link rel="stylesheet", href="style.css">
+        <title>WorldLink</title>
     </head>
-
     <body>
-        <div class="left_panel">
-            <div class="header">
-                <div class="dragger" id="header-dragger"></div>
-                <div class="home">
-                    <img class="home_icon" src=""></img>
-                    <h1 class="home_title">Добро пожаловать!</h1>
-                    <h3 class="home_desc">Пока вас не было, мы всё подготовили.</h3>
-                </div>
+        <div class="fullScreen-panel" id="Main">
+            <div class = dragger></div>
+            <div class="History">
+                <ul class="Chat-history">
+                </ul>
+            <div class="separator"></div>
+            </div>
+            <div class="Input">
+                <input class="Message" placeholder="Сообщение..."></input>
+                <button class="Send">Отправить</button>
             </div>
         </div>
 
-        <div class="right_panel">
-            <div class="weather_data">
-                <div class="dragger" id="data-dragger"></div>
-                <img class="icon" src=""></img>
-                <h1 class="temp_now"></h1>
-                <h2 class="temp_feels"></h2>
-                <h2 class="desc">Введите город для показа</h2>
-                <h3 class="temp_max_min"></h3>
-            </div>
-
-            <div class="input">
-                <div class="dragger" id="input-dragger"></div>
-                <button class="button">Получить</button>
-                <input class="inputValue"></input>
-            </div>
+        <div class="panel" id="InputPanel">
+            <div class="dragger" id="Input-dragger"></div>
+            <h1 class="name">Введите имя</h1>
+            <input class="InputName"></input>
+            <button class="UpdateName">Применить</button>
         </div>
-
     </body>
-    <script src="html_elements.js"></script>
-    <script src="drag.js"></script>
+
+    <script src="elems.js"></script>
     <script src="scr.js"></script>
+    <script src="drag.js"></script>
 </html>
